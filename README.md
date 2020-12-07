@@ -14,10 +14,9 @@ Without any need to integrate, modifiy or learn the project source code.
 implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
 
 # AndroidManifest 
+uses-permission android:name="android.permission.CAMERA"
 
-<uses-permission android:name="android.permission.CAMERA"/>
-
- <activity android:name=".Capture"
+ activity android:name=".Capture"
             android:screenOrientation="portrait"
-            android:theme="@style/zxing_CaptureTheme"/>
+            android:theme="@style/zxing_CaptureTheme"
 
